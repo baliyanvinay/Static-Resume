@@ -1,0 +1,35 @@
+body {
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#name_photo {
+    clear: both;
+}
+
+h1 {
+    font-family:Verdana;
+}
+
+#profile_img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#Technologies {
+    width: 100%;
+}
+
+#Tech_Paragraph {
+    width: 50%;
+    float: left;
+}
+
+#tech_progress {
+    width: 50%;
+    float: left;
+}
+
+hr {
+    background-color: #333; /* Black color */
+}
