@@ -8,76 +8,118 @@
     </head>
 
     <body>
-        <!-- Added Profile Photo here; 
-            Id is unique and can't be used again, access using # in styles.css 
-        -->
-        <div id="name_photo">
-            <img id="profile_img" src="src/Profile Picture.jpg", alt="Profile Photo", height="200", width="180">
-    
-            <h1>Vinay Baliyan</h1>
-            <h2>Python Developer</h2>
-        </div>
-        <hr>
+
+        <!-- Added Profile Photo here; Id is unique and can't be used again, access using # in styles.css -->
+        <div id="contact_info_photo"> <!--This is divided into two div; left containing contact info; right profile photo-->
+            <div id="contact_info"> 
+                <ul>
+                    <li><img class="logo" src="src/Phone-logo.svg", alt="gmail-logo", height="15", width="15">
+                        +91 8909411078</li>
+                    <li><img class="logo" src="src/gmail-logo.svg", alt="gmail-logo", height="15", width="15"> 
+                        baliyanvinay17@gmail.com</li>
+                    <div class="Links">
+                        <!-- Links to other related sites -->
+                        <li><img class="logo" src="src/linkedin-logo.svg", alt="gmail-logo", height="15", width="15">
+                            <a href="https://www.linkedin.com/in/vinay-baliyan-646ba1170/", target="_blank">LinkedIn<br></a></li>
+                        <li><img class="logo" src="src/github-logo.svg", alt="gmail-logo", height="15", width="15">
+                            <a href="https://github.com/baliyanvinay", target="_blank">GitHub<br></a></li>
+                        <li><img class="logo" src="src/hackerrank-logo.svg", alt="gmail-logo", height="15", width="15">
+                            <a href="https://www.hackerrank.com/baliyanvinay17", target="_blank">HackerRank<br></a></li>
+                        <li><img class="logo" src="src/Location-logo.png", alt="gmail-logo", height="15", width="15">
+                            <a href="https://goo.gl/maps/SHFBcjhGySunBYmE9", target="_blank">Gurgaon, Haryana<br></a></li>
+                            
+                    </div>
+                </ul>
+            </div> <!--End of Adding of contact details-->
+            <div id="name_photo">
+                <img id="profile_img" src="src/Profile Picture.jpg", alt="Profile Photo", height="200", width="180">
         
-        <div id="Technologies">
-            <!-- Technologies Used Styled using the class, access via dot in stles.css-->
-            <p title="Technologies and Tools" id="Tech_Paragraph">
-                Technologies in stack: Python, Django, 
-                <abbr title="Hyper Text MarkUp Language">HTML</abbr>, 
-                <abbr title="Cascading Style Sheets">CSS</abbr>, Javascript and C++.<br>
-                Tools known: Git, GitHub, QlikView, BitBucket, JIRA, Confluence and Excel.<br>
-                Libraries known: Pandas, Numpy and matplotlib. 
-            </p>
+                <h3>Vinay Baliyan</h3>
+                <h5>Python Developer</h5>
+            </div> <!--End of adding role and profile photo-->
+        </div> <hr>
 
-            <!-- Competencies in each technology using bootstrap -->
-            <div id="tech_progress">
-                <div class="progress">
-                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Python</div>
-                </div> <br>
-                <div class="progress">
-                    <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">QlikView</div>
-                </div> <br>
-                <div class="progress">
-                    <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Django</div>
-                </div> <br>
-            </div>
-            <br> <br> <br> <br> <hr>
-        </div>
-
+        <!--Tools and Technologies Known-->
+        <div class="container-fluid">
+            <h3 class='sub-sections'>Technologies and Tools</h3>
+            <div class="row">	
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Technologies</h5>
+                    Front End: HTML5, CSS3 and Bootstrap4
+                    Back End: Python and Django
+                    Database: Oracle SQL and SQLlite
+                </div> <!--End of Technologies list-->
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Tools and Libraries</h5>
+                        <li>Business Intelligence: Qlikview & QlikSense.</li>
+                        <li>Version Control System: Git, BitBukcet & GitHub.</li>
+                        <li>Agile: JIRA & Confluence</li>
+                        <li>Others: Jupyter & VSCode</li>
+                    <li>Libraries: Pandas, Numpy, Matplotlib</li>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Competencies in Tech</h5>
+                    <div class="progress"> <!--Python-->
+                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">Python</div>
+                    </div> <p class="space">  
+                    <div class="progress"> <!--QlikView-->
+                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">QlikView</div>
+                    </div> <p class="space">  
+                    <div class="progress"> <!--HTML-->
+                        <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">HTML/CSS</div>
+                    </div> <p class="space">      
+                    <div class="progress"> <!--Django-->
+                        <div class="progress-bar" role="progressbar" style="width: 10%;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">Django</div>
+                    </div> <p class="space"></p>
+                </div>
+            </div> <!--End of row 1-->
+        </div> <hr><!--End of container-fluid-->
 
         <!-- Working Exprience in Projects -->
-        <div>
-            <h4 class="Tech_Paragraph">Working Exprience</h4>
-            <ul>
-                <li>Business Intelligence Developer
-                    <p>
-                        Requirement gathering with business and IT counterparts <br>
-                        Assess technical feasibility of gathered requirements <br>
-                        Consult data architects and prepare data models for QlikView visualizations
-                    </p>
-                </li>
-                <li>VBA Developer</li>
-                <li>Business Support Analyst</li>
-            </ul>
-            <hr>
-        </div>
+        <div class="container-fluid">
+            <h3 class="sub-sections">Exprience</h3>
+            <div class="row">
+                <!--Expreience as QlikView Developer-->
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Business Intelligence Developer</h5>
+                    <ul>
+                        <li>Requirement gathering with business and IT counterparts.</li> 
+                        <li>Assess technical feasibility of gathered requirements</li>
+                        <li>Consult data architects and prepare data models for QlikView visualizations</li>
+                        <li>Develop QlikView dashboards based on the gathered requirements and run consultation 
+                            discussions with stakeholders on the developed dashboards</li>
+                        <li>Manage and version control Qlikview code using Git in BitBucket repository</li>
+                        <li>Be part of the agile development team and contribute in planning, tracking and reporting 
+                            daily status to the team and ad-hoc status to project management team</li>
+                    </ul>
+                </div> <!--End of Exprience as QV Dev-->
+                <!--Exprience as VB Developer-->
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Visual Basic Developer</h5>
+                    <ul>
+                        <li>Compling various excel reports using vlookups via macros.</li> 
+                        <li>As per Business KPIs and specifications, applying operations like data filter, data cleaning, merging files, lookup and data modelling.</li>
+                        <li>Integration with MS Outlook for automated email notification and delivery using the sheets with business logic applied</li>
+                        <li>Running consultation calls with business regularly on potential areas of progress</li>
+                        <li>Applying checks to impose strict document convintion for important business documents</li>
+                    </ul>
+                </div> <!--End of Exprience as VB Dev-->
+                <!--Expreience as Support Analyst-->
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Business Support Analyst</h5>
+                    <ul>
+                        <li>Support business users on set‐up and maintenance of trial(s) in Clinical Trial Management and site Collaboration System</li> 
+                        <li>Ensure all tickets are resolved within Service Level Agreements</li>
+                        <li>Act as Consultant to users on the application of the global standard clinical trial process in their specific setting</li>
+                        <li>Perform tasks within Pharma regulatory guidelines and Client SOPs</li>
+                        <li>Self-sufficient in identifying problems in supporting systems, business processes or knowledge repositories</li>
+                        <li>Analyse the root cause of problems in interaction with other 3rd level support groups and vendors</li>
+                    </ul> 
+                </div> <!--End of Exprience as Support Analyst-->
+            </div> <!--End of row 1-->
+        </div> <hr><!--End of Exprience div : Container-fluid ends-->
 
-        <div class="Links">
-            <!-- Links to other related sites -->
-            <a href="https://www.linkedin.com/in/vinay-baliyan-646ba1170/">LinkedIn<br></a>
-            <a href="https://github.com/baliyanvinay">GitHub<br></a>
-            <a href="https://www.hackerrank.com/baliyanvinay17">HackerRank<br></a>
-            <hr>
-        </div>
-
-        <address>
-            H.No. 289<br> 
-            Village Bhoura Khurd<br>
-            Muzaffarnagar<br>
-            Uttar Pradesh<br>
-            Pin: 251319
-        </address>
-        <hr>            
+        <!--Testing -->
 
     </body>
 </html>
