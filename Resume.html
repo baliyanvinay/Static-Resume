@@ -9,39 +9,39 @@
 
     <body>
 
-        <!-- Added Profile Photo here; Id is unique and can't be used again, access using # in styles.css -->
-        <div id="contact_info_photo"> <!--This is divided into two div; left containing contact info; right profile photo-->
-            <div id="contact_info"> 
-                <ul>
-                    <li><img class="logo" src="src/Phone-logo.svg", alt="gmail-logo", height="15", width="15">
-                        +91 8909411078</li>
-                    <li><img class="logo" src="src/gmail-logo.svg", alt="gmail-logo", height="15", width="15"> 
-                        baliyanvinay17@gmail.com</li>
-                    <div class="Links">
-                        <!-- Links to other related sites -->
-                        <li><img class="logo" src="src/linkedin-logo.svg", alt="gmail-logo", height="15", width="15">
+        <!--Photo and contacts details-->
+        <div class="container-fluid"> 
+            <div class="row">
+                <div class="col-md-4">
+                    <ul>
+                        <li><img src="src/Phone-logo.svg", alt="gmail-logo", height="15", width="15">
+                            +91 8909411078</li>
+                        <li><img src="src/gmail-logo.svg", alt="gmail-logo", height="15", width="15"> 
+                            baliyanvinay17@gmail.com</li>
+                            <!-- Links to other related sites -->
+                        <li><img src="src/linkedin-logo.svg", alt="gmail-logo", height="15", width="15">
                             <a href="https://www.linkedin.com/in/vinay-baliyan-646ba1170/", target="_blank">LinkedIn<br></a></li>
-                        <li><img class="logo" src="src/github-logo.svg", alt="gmail-logo", height="15", width="15">
+                        <li><img src="src/github-logo.svg", alt="gmail-logo", height="15", width="15">
                             <a href="https://github.com/baliyanvinay", target="_blank">GitHub<br></a></li>
-                        <li><img class="logo" src="src/hackerrank-logo.svg", alt="gmail-logo", height="15", width="15">
+                        <li><img src="src/hackerrank-logo.svg", alt="gmail-logo", height="15", width="15">
                             <a href="https://www.hackerrank.com/baliyanvinay17", target="_blank">HackerRank<br></a></li>
-                        <li><img class="logo" src="src/Location-logo.png", alt="gmail-logo", height="15", width="15">
+                        <li><img src="src/Location-logo.png", alt="gmail-logo", height="15", width="15">
                             <a href="https://goo.gl/maps/SHFBcjhGySunBYmE9", target="_blank">Gurgaon, Haryana<br></a></li>
-                            
-                    </div>
-                </ul>
-            </div> <!--End of Adding of contact details-->
-            <div id="name_photo">
-                <img id="profile_img" src="src/Profile Picture.jpg", alt="Profile Photo", height="200", width="180">
-        
-                <h3>Vinay Baliyan</h3>
-                <h5>Python Developer</h5>
-            </div> <!--End of adding role and profile photo-->
-        </div> <hr>
+                    </ul>
+                </div> <!--End of contact info-->
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center"> <!--to align text on the right side, used text-right -->
+                    <img class="rounded-circle border border-dark" src="src/Profile Picture.jpg", alt="Profile Photo", height="200", width="180">
+                    
+                    <h3 class="text-capitalize">Vinay Baliyan</h3>
+                    <h5 class="text-capitalize">Python Developer</h5>
+                </div> <!--End of profile photo-->
+            </div> <!--End of row-->
+        </div><!--End of container-fluid-->
 
         <!--Tools and Technologies Known-->
+        <h3 class='sub-sections'>Technologies and Tools</h3>
         <div class="container-fluid">
-            <h3 class='sub-sections'>Technologies and Tools</h3>
             <div class="row">	
                 <div class="col-md-4">
                     <h5 class="sub-sections">Technologies</h5>
@@ -73,11 +73,11 @@
                     </div> <p class="space"></p>
                 </div>
             </div> <!--End of row 1-->
-        </div> <hr><!--End of container-fluid-->
+        </div><!--End of container-fluid-->
 
         <!-- Working Exprience in Projects -->
+        <h3 class="sub-sections">Exprience</h3>
         <div class="container-fluid">
-            <h3 class="sub-sections">Exprience</h3>
             <div class="row">
                 <!--Expreience as QlikView Developer-->
                 <div class="col-md-4">
@@ -117,9 +117,40 @@
                     </ul> 
                 </div> <!--End of Exprience as Support Analyst-->
             </div> <!--End of row 1-->
-        </div> <hr><!--End of Exprience div : Container-fluid ends-->
+        </div><!--End of Exprience div : Container-fluid ends-->
 
-        <!--Testing -->
+        <!--Education and Certifications-->
+        <h3 class="sub-sections">Education and Certifications</h3>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Master of Computer Applications</h5>
+                    <h6>Shanmugha Arts, Science, Technology and Research Academy 2016-2019</h6>
+                    <p>Distant Learning Program in collaboration with TCS with weekend classes.
+                        Networking, Java, Databases, Web designing and business communication were the subjects among others.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Bachelor of Computer Applications</h5>
+                    <h6>IIMT Engineering College, Meerut 2012-2015</h6>
+                    <p>
+                        Learning in C, C++, Data Structure, Business management, Java, Databases, Business presentations, Statistics and Mathematics.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="sub-sections">Certifications</h5>
+                    <ul>
+                        <li>Python 3 Bootcamp-Udemy</li>
+                        <li>Python Basic-HackerRank</li>
+                        <li>QlikView Bootcamp-Udemy</li>
+                        <li>Python for Data Science & AI-Cousera</li>
+                        <li>Django 3-Udemy</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!--End of Education and certifications container div-->
 
     </body>
 </html>
